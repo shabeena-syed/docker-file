@@ -4,5 +4,5 @@ CMD [ "sleep" "100"]
 ARG trainer=shiva
 ARG duration=100 hr
 ENV duration=${duration}
-RUN install nginx -y
+RUN install nginx 
 CMD [ "sleep","100"]
