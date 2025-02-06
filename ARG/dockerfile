@@ -1,3 +1,8 @@
-ARG version
+ARG version=8
 FROM almalinux:${version}
 CMD [ "sleep" "100"]
+ARG trainer=shiva
+ARG duration=100 hr
+ENV duration=${duration}
+RUN install nginx -y
+CMD [ "sleep","100"]
